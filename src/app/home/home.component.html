@@ -1,0 +1,83 @@
+<body>
+
+    <div class="ellipse">
+  
+      <img src="https://1000logos.net/wp-content/uploads/2021/08/Capgemini-Emblem.png" style="width: 100%" alt="image">
+  
+  
+   
+  
+      <div class="form-center">
+  
+        <div color="primary">
+  
+          <div class="title">
+  
+            <h1>E-Library</h1>
+  
+          </div>
+  
+  
+   
+  
+          <div class="sub">
+  
+            <marquee><h2>powered by Capgemini</h2></marquee>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  
+   
+  
+    <div class="container">
+  
+      <form (ngSubmit)="login()" #myForm="ngForm">
+  
+        <div class="form-group">
+  
+          <label for="username" style="color: black">Email ID:</label>
+  
+          <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required />
+  
+        </div>
+  
+        <div class="form-group">
+  
+          <label for="password" style="color: black">Password:</label>
+  
+          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required />
+  
+        </div>
+  
+        <button type="submit" class="btn btn-primary" [disabled]="!myForm.form.valid">
+  
+          Login
+  
+        </button>
+  
+        <p style="color: blue">
+  
+          Not a member? <b><a style="color:red" routerLink="newuser">Register</a></b>
+  
+        </p>
+  
+      </form>
+  
+    </div>
+
+    <style>
+      body {
+        background-image: url('https://archello.s3.eu-central-1.amazonaws.com/images/2019/03/22/hoofdkantoor-capgemini-8.1553258123.1149.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>
+  
+  </body>

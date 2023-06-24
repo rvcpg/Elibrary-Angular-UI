@@ -1,0 +1,37 @@
+<body>
+
+  <div class="container" style="border-style: solid;">
+
+    <div class="title">Top Subscribers by Points</div>
+
+    <table class="table table-striped">
+
+      <thead>
+
+        <tr style="background-color: slategray;">
+
+          <th>Name</th>
+
+          <th>Points</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let subscriber of Subscribers">
+
+          <td><span>{{subscriber.firstName}}</span></td>
+
+          <td><span>{{subscriber.points}}</span></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</body>

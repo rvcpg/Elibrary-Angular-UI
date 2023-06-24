@@ -1,0 +1,244 @@
+<body>
+
+
+
+
+    <!-- ====================Header============================ -->
+  
+  
+  
+  
+    <div class="header">
+  
+      <div class="logo">E-Library</div>
+  
+      <div class="user">
+  
+        <mat-icon value="logout" (click)="logout()">logout</mat-icon>
+  
+      </div>
+  
+    </div>
+  
+  
+  
+  
+  
+    <!-- ======================Sidenav================================================ -->
+  
+  
+  
+  
+  
+    <div class="main-container">
+  
+      <div class="side-nav">
+  
+        <div class="nav-items">
+  
+          <div class="nav-item" value="submit" (click)="submit()">
+  
+  
+  
+  
+            <span>Dashboard</span>
+  
+          </div>
+  
+          <div class="nav-item">
+  
+  
+  
+  
+            <span>Surf e-books</span>
+  
+          </div>
+  
+          <div class="nav-item" value="submit" (click)="quiz()">
+  
+  
+  
+  
+            <span>Take Quiz</span>
+  
+          </div>
+  
+  
+  
+  
+        </div>
+  
+      </div>
+  
+  
+  
+  
+  
+      <!-- ======================= Main Container ========================= -->
+  
+  
+  
+  
+      <div class="main">
+  
+        <div class="card" style="width: 27cm; height: 3cm; border-color: black; border-radius: 20px;">
+  
+          <ul class="nav">
+  
+            <div class="card-search">
+  
+              <div class="top">E-Books Filter</div>
+  
+  
+  
+  
+              <div class="card-body">
+  
+                <!-- <form [formGroup]="filterForm" (ngSubmit)="searchBook()" #myForm="ngForm"> -->
+  
+                <div class="search">
+  
+                  <li>
+  
+                    <div class="search1" style="size:15cm;">
+  
+                      <div class="input-group mb-3">
+  
+                        <input type="text" class="form-control" name="name" placeholder="Search by Name"
+  
+                          [(ngModel)]="name" (ngModelChange)="searchByName()">
+  
+                      </div>
+  
+                    </div>
+  
+                  </li>
+  
+                  <li>
+  
+                    <div class="search2">
+  
+                      <div class="input-group mb-4">
+  
+                        <input type="text" class="form-control" name="author" placeholder="Search by Author"
+  
+                          [(ngModel)]="author" (ngModelChange)="searchByAuthor()">
+  
+                      </div>
+  
+                    </div>
+  
+                  </li>
+  
+                  <li>
+  
+                    <div class="search3">
+  
+                      <div class="input-group mb-5">
+  
+                        <input type="text" class="form-control" name="category" placeholder="Search by Category"
+  
+                          [(ngModel)]="category" (ngModelChange)="searchByCategory()">
+  
+                      </div>
+  
+                    </div>
+  
+                  </li>
+  
+                  <!-- <li>
+  
+                      <div class="search4">
+  
+                        <button class="btn btn-primary" type="submit">Filter</button>
+  
+                      </div>
+  
+                    </li> -->
+  
+                </div>
+  
+                <!-- </form> -->
+  
+              </div>
+  
+            </div>
+  
+          </ul>
+  
+  
+  
+  
+        </div>
+  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  
+  
+  
+  
+        <!-- ================================================================ -->
+  
+  
+  
+  
+  
+        <div class="card-columns">
+  
+          <div *ngFor="let book of bookList">
+  
+            <div class="card w-100">
+  
+              <div class="title">{{book.name}}</div>
+  
+              <div class="card-body">
+  
+                <div class="row">
+  
+                  <div class="column" style="padding-top: 30px;">
+  
+                    <p >Author: {{book.author}}</p>
+  
+                    <p>Category:{{book.category}}</p>
+  
+                    <a href="preview()" class="link-primary">Preview</a><br>
+  
+                    <a href="subscription()" class="link-primary">Subscribe</a>
+  
+                  </div>
+  
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+                  <div class="column">
+  
+                    <img src={{book.url}} style="width:100%" alt="image">
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+        </div>
+  
+  
+  
+  
+  
+        <!-- ======================================== -->
+  
+      </div>
+  
+    </div>
+  
+  
+  
+  
+  </body>

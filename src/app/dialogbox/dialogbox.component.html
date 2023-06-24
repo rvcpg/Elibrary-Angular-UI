@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Recommend to a collegue</h1>
+
+<div mat-dialog-content>
+
+  <h2>Enter email:</h2>
+
+  <form [formGroup]="emailForm" #myForm="ngForm">
+
+    <div class="form-group">
+
+      <input type="email" name="email" ngModel
+
+        [email]="true" class="form-control" placeholder="Enter email" formControlName="email" required>
+
+      <div *ngIf="emailForm.controls['email'].touched && emailForm.controls['email'].invalid"
+
+        class="alert alert-danger">please enter valid email</div>
+
+    </div>
+
+  </form>
+
+  <mat-dialog-actions>
+
+    <button class="mat-raised-button" (click)="close()" [disabled]="!myForm.form.valid"
+
+      class="btn btn-info">Send</button>
+
+  </mat-dialog-actions>

@@ -1,0 +1,361 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Ravi",
+      "lastName": "Kumar",
+      "email": "rv@gmail.com",
+      "username": "rvk29",
+      "password": "rv@999"
+    },
+    {
+      "username": "red",
+      "password": "label",
+      "id": "gYR8Lrs"
+    },
+    {
+      "username": "red",
+      "password": "label",
+      "id": "JZtpzWU"
+    },
+    {
+      "username": "ash",
+      "password": "1234",
+      "id": "OAbCEGQ"
+    }
+  ],
+  "Subscription": [
+    {
+      "id": "1",
+      "firstName": "Ravi",
+      "lastName": "Kumar",
+      "email": "rv@gmail.com",
+      "fare": "699",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023",
+      "name": "Corporate Chanakya",
+      "author": "R.K Pillai",
+      "category": "Management"
+    }
+  ],
+  "Book": [
+    {
+      "id": "1",
+      "name": "Harry Potter & the half blood prince",
+      "author": "JK Rowling",
+      "category": "Novel",
+      "url": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Harry Potter & the prisoners of Azkaban",
+      "author": "JK Rowling",
+      "category": "Novel",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP5ZMmNwFJF6m7jJQEOdbXaBsvaeujnL8TnoQarlnOl0QX54Idz84AxNaxBmhzzsqvwA&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "name": "Harry Potter & the deathly hallows part 1",
+      "author": "JK Rowling",
+      "category": "Novel",
+      "url": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_.jpg"
+    },
+    {
+      "name": "Interstellar",
+      "author": "JK Borrow",
+      "category": "Sci-fi",
+      "id": "4",
+      "url": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Corporate Chanakya",
+      "author": "R.K Pillai",
+      "category": "Management",
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1337132993i/8828998.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Learn Angular in 24 Hrs",
+      "author": "Wikipedia",
+      "category": "Technical",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+    }
+  ],
+  "Subscribers": [
+    {
+      "name": "Jethiya",
+      "points": "500",
+      "firstName": "Jethalal",
+      "lastName": "Gada",
+      "email": "jg@gmail.com",
+      "fare": "200",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023"
+    },
+    {
+      "name": "Champakiya",
+      "points": "400",
+      "firstName": "Champaklal",
+      "lastName": "Gada",
+      "email": "cg@gmail.com",
+      "fare": "200",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023"
+    },
+    {
+      "name": "Bhide",
+      "points": "300",
+      "firstName": "Aatmaram",
+      "lastName": "Bhide",
+      "email": "ab@gmail.com",
+      "fare": "200",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023"
+    },
+    {
+      "name": "Sodhi",
+      "points": "200",
+      "firstName": "Gurucharan",
+      "lastName": "Sodhi",
+      "email": "gs@gmail.com",
+      "fare": "200",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023"
+    },
+    {
+      "name": "Iyer",
+      "points": "100",
+      "firstName": "Krishnan",
+      "lastName": "Iyer",
+      "email": "ki@gmail.com",
+      "fare": "200",
+      "subscribedOn": "May, 2022",
+      "expireOn": "May, 2023"
+    }
+  ],
+  "HarryPotterQuiz": [
+    {
+      "question": "Who actually was the half blood prince?",
+      "options": [
+        "Albus Dumbledore",
+        "Severus Snape",
+        "Bellatrix Lestrange",
+        "Tom Riddle"
+      ],
+      "answer": "Severus Snape",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who is Dumbledore's deputy headmistress?",
+      "options": [
+        "Dolores Umbridge",
+        "Professor McGonagall",
+        "Professor Trelawney",
+        "Madam Pomfrey"
+      ],
+      "answer": "Professor McGonagall",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who does Hagrid bury in his backyard?",
+      "options": [
+        "Lucius Malfoy",
+        "Aragog",
+        "Gwarp",
+        "Witherwings"
+      ],
+      "answer": "Aragog",
+      "selectedOption": ""
+    },
+    {
+      "question": "How old must a student be to take an Apparition test?",
+      "options": [
+        "15",
+        "17",
+        "16",
+        "18"
+      ],
+      "answer": "17",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who does Harry catch with Sirius’s stolen belongings?",
+      "options": [
+        "Filch",
+        "Mundungus",
+        "Nearly Headless Nick",
+        "Dumbledore"
+      ],
+      "answer": "Mundungus",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who is the captain of the Gryffindor Quidditch team?",
+      "options": [
+        "Ron Weasley",
+        "Harry Potter",
+        "Katie Bell",
+        "Dean Thomas"
+      ],
+      "answer": "Harry Potter",
+      "selectedOption": ""
+    },
+    {
+      "question": "What does Draco Malfoy ask Borgin to fix for him?",
+      "options": [
+        "His wand",
+        "The vanishing cabinet",
+        "A necklace",
+        "His cloak"
+      ],
+      "answer": "The vanishing cabinet",
+      "selectedOption": ""
+    },
+    {
+      "question": "What does Harry suspect Draco Malfoy of being?",
+      "options": [
+        "A giant",
+        "A Death Eater",
+        "Voldemort",
+        "A ghost"
+      ],
+      "answer": "A Death Eater",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who bit Remus Lupin, turning him into a werewolf?",
+      "options": [
+        "Voldemort",
+        "Fenir Greyback",
+        "Lucius Malfoy",
+        "Snape"
+      ],
+      "answer": "Fenir Greyback",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who replaced Cornelius Fudge as the new Minister of Magic?",
+      "options": [
+        "Dolores Umbridge",
+        "Rufus Scrimgeour",
+        "Snape",
+        "Mr. Weasley"
+      ],
+      "answer": "Rufus Scrimgeour",
+      "selectedOption": ""
+    }
+  ],
+  "InterstellarQuiz": [
+    {
+      "question": "What natural disaster is happening on Earth, that will eventually cause the human race to go extinct?",
+      "options": [
+        "Hurricanes",
+        "Volcanoes",
+        "Dust Storms",
+        "Earthquakes"
+      ],
+      "answer": "Volcanoes",
+      "selectedOption": ""
+    },
+    {
+      "question": "What does the message from the ghost say in Murphy's room.",
+      "options": [
+        "I Love You",
+        "STAY",
+        "Go to Miller's Planet",
+        "Leave Now"
+      ],
+      "answer": "STAY",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who is Murphy's ghost?",
+      "options": [
+        "Professor Brand",
+        "Cooper",
+        "Her brother, Tom",
+        "Dr. Mann"
+      ],
+      "answer": "Cooper",
+      "selectedOption": ""
+    },
+    {
+      "question": "How old must a student be to take an Apparition test?",
+      "options": [
+        "15",
+        "17",
+        "16",
+        "18"
+      ],
+      "answer": "17",
+      "selectedOption": ""
+    },
+    {
+      "question": "When Cooper finally gets back, how old is he?",
+      "options": [
+        "124 years old",
+        "27 years old",
+        "84 years old",
+        "50 years old"
+      ],
+      "answer": "27 years old",
+      "selectedOption": ""
+    },
+    {
+      "question": "What was one of the important jobs of that time?",
+      "options": [
+        "Engineering",
+        "Farming",
+        "Nurse",
+        "Firefighter"
+      ],
+      "answer": "Farming",
+      "selectedOption": ""
+    },
+    {
+      "question": "Which planet is near the wormhole in Interstellar?",
+      "options": [
+        "Mercury",
+        "Saturn",
+        "Venus",
+        "Earth"
+      ],
+      "answer": "Saturn",
+      "selectedOption": ""
+    },
+    {
+      "question": "What is the genre of the movie?",
+      "options": [
+        "Comedy",
+        "Sci-Fi",
+        "Horror",
+        "All of the above"
+      ],
+      "answer": "Sci-Fi",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who bit Remus Lupin, turning him into a werewolf?",
+      "options": [
+        "Voldemort",
+        "Fenir Greyback",
+        "Lucius Malfoy",
+        "Snape"
+      ],
+      "answer": "Fenir Greyback",
+      "selectedOption": ""
+    },
+    {
+      "question": "Who solves the gravity equation and helps humanity escape the earth in the movie?",
+      "options": [
+        "Cooper",
+        "Murph",
+        "Tom",
+        "Dr. Amelia"
+      ],
+      "answer": "Murph",
+      "selectedOption": ""
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+<body>
+
+
+
+
+    <!-- ====================Header============================ -->
+
+
+
+
+    <div class="header">
+
+        <div class="logo">E-Library</div>
+
+        <div class="user">
+
+            <mat-icon value="logout" (click)="logout()">logout</mat-icon>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- ======================Sidenav================================================ -->
+
+
+
+
+
+    <div class="main-container">
+
+        <div class="side-nav">
+
+            <div class="nav-items">
+
+                <div class="nav-item" value="submit" (click)="dashboard()">
+
+
+
+
+                    <span>Dashboard</span>
+
+                </div>
+
+                <div class="nav-item" value="submit" (click)="submit()">
+
+
+
+
+                    <span>Surf e-books</span>
+
+                </div>
+
+                <div class="nav-item">
+
+
+
+
+                    <span>Take Quiz</span>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- ======================= Main Container ========================= -->
+
+
+
+
+
+
+        <div class="main">
+
+            <div class="card">
+
+                <div class="card-body">
+
+
+
+
+                    <div class="top">Select From Your Active Subscription</div>
+
+
+
+
+                    <table class="table table-striped">
+
+                        <thead>
+
+                            <tr>
+
+                                <th scope="col">e-Book ID</th>
+
+                                <th scope="col">e-Book Name</th>
+
+                                <th scope="col">Subscription Date</th>
+
+                                <th scope="col">Subscription Id</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th scope="row">1221</th>
+
+                                <td>Harry Potter & The Half Blood….</td>
+
+                                <td>29 Mar 2020</td>
+
+                                <td>1022242</td>
+
+                                <td (click)="harryquiz()"><mat-icon>label</mat-icon></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">1226</th>
+
+                                <td>Interstellar</td>
+
+                                <td>25 Feb 2020</td>
+
+                                <td>1011231</td>
+
+                                <td (click)="interstellar()"><mat-icon>label</mat-icon></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">1889</th>
+
+                                <td>Corporate Chanakya</td>
+
+                                <td>12 Jan 2020</td>
+
+                                <td>1011223</td>
+
+                                <td><mat-icon>label</mat-icon></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>

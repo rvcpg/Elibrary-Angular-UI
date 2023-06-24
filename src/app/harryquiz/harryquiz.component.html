@@ -1,0 +1,263 @@
+<body>
+
+
+
+
+    <!-- ====================Header============================ -->
+
+
+
+
+    <div class="header">
+
+        <div class="logo">E-Library</div>
+
+        <div class="user">
+
+            <mat-icon value="logout" (click)="logout()">logout</mat-icon>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- ======================Sidenav================================================ -->
+
+
+
+
+
+    <div class="main-container">
+
+        <div class="side-nav">
+
+            <div class="nav-items">
+
+                <div class="nav-item" value="submit" (click)="dashboard()">
+
+
+
+
+                    <span>Dashboard</span>
+
+                </div>
+
+                <div class="nav-item" value="submit" (click)="submit()">
+
+
+
+
+                    <span>Surf e-books</span>
+
+                </div>
+
+                <div class="nav-item" value="submit" (click)="quiz()">
+
+
+
+
+                    <span>Take Quiz</span>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- ======================= Main Container ========================= -->
+
+
+
+
+
+
+        <div class="main">
+
+            <div class="card">
+
+                <div class="card-body">
+
+
+
+
+                    <div class="top">Select From Your Active Subscription</div>
+
+
+
+
+                    <table class="table table-striped">
+
+                        <thead>
+
+                            <tr>
+
+                                <th scope="col">e-Book ID</th>
+
+                                <th scope="col">e-Book Name</th>
+
+                                <th scope="col">Subscription Date</th>
+
+                                <th scope="col">Subscription Id</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th scope="row">1221</th>
+
+                                <td>Harry Potter & The Half Blood….</td>
+
+                                <td>29 Mar 2020</td>
+
+                                <td>1022242</td>
+
+                                <td (click)="harryquiz()"><mat-icon>hourglass_bottom</mat-icon></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">1226</th>
+
+                                <td>Interstellar</td>
+
+                                <td>25 Feb 2020</td>
+
+                                <td>1011231</td>
+
+                                <td (click)="interstellar()"><mat-icon>hourglass_bottom</mat-icon></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">1889</th>
+
+                                <td>Corporate Chanakya</td>
+
+                                <td>12 Jan 2020</td>
+
+                                <td>1011223</td>
+
+                                <td><mat-icon>hourglass_bottom</mat-icon></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+            <div class="card">
+
+                <h5 class="card-title">Harry Potter & The Half Blood Prince Quiz</h5>
+
+
+
+
+                <div class="topright">
+
+                    <p>your score : {{ score*10 }}</p>
+
+                </div>
+
+
+
+
+                <div *ngIf="HarryPotterQuiz" style=" background-color: rgb(34, 42, 53) !important; color: white;">
+
+                    <h5 style="text-align: center;">{{ HarryPotterQuiz[currentQuestionIndex].question }}</h5>
+
+
+
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+                    <div>
+
+                        <div *ngFor="let option of HarryPotterQuiz[currentQuestionIndex].options" style="display: inline-block;padding-inline-start: 100px;">
+
+                            <label>
+
+                                <input type="radio" [(ngModel)]="selectedOption" [value]="option">{{ option }}
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                   
+
+                    <div style="text-align: center; padding-bottom: 30px;">
+
+                    <button (click)="onNext()">Next</button>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div *ngIf="currentQuestionIndex >= HarryPotterQuiz.length">
+
+                    <p>Quiz Completed!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>

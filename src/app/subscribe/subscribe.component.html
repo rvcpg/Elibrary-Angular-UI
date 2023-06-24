@@ -1,0 +1,340 @@
+<body>
+
+
+
+
+    <!-- ====================Header============================ -->
+
+
+
+
+    <div class="header">
+
+        <div class="logo">E-Library</div>
+
+        <div class="user">
+
+            <div *ngFor="let user of users">
+
+                <div class="user-name" style="color: white;">{{user.firstName}</div>
+
+            </div>
+
+            <mat-icon value="logout" (click)="logout()">logout</mat-icon>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- ======================Sidenav================================================ -->
+
+
+
+
+
+    <div class="main-container">
+
+        <div class="side-nav">
+
+            <div class="nav-items">
+
+                <div class="nav-item" value="submit" (click)="submit()">
+
+
+
+
+                    <span>Dashboard</span>
+
+                </div>
+
+                <div class="nav-item" value="submit" (click)="book()">
+
+
+
+
+                    <span>Surf e-books</span>
+
+                </div>
+
+                <div class="nav-item" value="submit" (click)="quiz()">
+
+
+
+
+                    <span>Take Quiz</span>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- ======================= Main Container ========================= -->
+
+
+
+
+        <div class="main">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title" style="text-align: center;">Harry Potter & the half blood prince (Preview)
+
+                    </h5>
+
+
+
+
+
+                    <div class="grid-container">
+
+                        <div class="item2">
+
+                            <span>Author : J. K. Rowling<br>
+
+                                Category : Novel<br>
+
+                                Publisher : Potter More<br>
+
+                                Date Published : June 26, 1997<br>
+
+                                Points :200</span>
+
+                        </div>
+
+                        <div class="item3">
+
+                            <p>Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.
+
+                                The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione
+
+                                Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and
+
+                                Wizardry. The
+
+                                main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who
+
+                                intends to become
+
+                                immortal, overthrow the wizard governing body known as the Ministry of Magic and
+
+                                subjugate all
+
+                                wizards and Muggles (non-magical people).</p>
+
+                        </div>
+
+                        <div class="item4">
+
+                            <img src="https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_.jpg" style="width:30%" alt="image">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+            <div class="card" style="height: 280px;">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Harry Potter & the half blood prince (Subscription Form)</h5>
+
+                </div>
+
+
+
+
+                <form [formGroup]="adminlog" #myForm="ngForm" style="padding-bottom: 70px;">
+
+                    <div class="form-row">
+
+                        <div class="col">First Name
+
+                            <input type="text" class="form-control" placeholder="First name"
+
+                                formControlName="firstName">
+
+                            <div *ngIf="adminlog.controls['firstName'].touched && adminlog.controls['firstName'].errors"
+
+                                class="text-danger">
+
+                                Please Enter first Name
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">Last Name
+
+                            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
+
+                            <div *ngIf="adminlog.controls['lastName'].touched && adminlog.controls['lastName'].errors"
+
+                                class="text-danger">
+
+                                Please Enter last Name
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-row">
+
+                        <div class="col">
+
+                            <label for="inputEmail4">Email</label>
+
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email"
+
+                                formControlName="email">
+
+                            <div *ngIf="adminlog.controls['email'].touched && adminlog.controls['email'].errors"
+
+                                class="text-danger">
+
+                                Please Enter email
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="col">
+
+                            <label for="inputPassword4">Fare</label>
+
+                            <input type="fare" class="form-control" id="inputPassword4" placeholder="fare"
+
+                                formControlName="fare">
+
+                            <div *ngIf="adminlog.controls['fare'].touched && adminlog.controls['fare'].errors"
+
+                                class="text-danger">
+
+                                Please Enter fare
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-row">
+
+                        <div class="col">
+
+                            <label for="inputEmail4">Subscried On</label>
+
+                            <input type="date" class="form-control" id="inputEmail4" placeholder="Subscried On"
+
+                                formControlName="subscriedOn">
+
+                            <div *ngIf="adminlog.controls['subscriedOn'].touched && adminlog.controls['subscriedOn'].errors"
+
+                                class="text-danger">
+
+                                Selete date
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <label for="inputPassword4">Payment Mode</label>
+
+                            <select class="form-control" formControlName="payment">
+
+                                <option default>Select Payment Mode</option>
+
+                                <option>PhonePe</option>
+
+                                <option>Google Pay</option>
+
+                                <option>Net Banking</option>
+
+                                <option>Paytm</option>
+
+                            </select>
+
+                            <div *ngIf="adminlog.controls['payment'].touched && adminlog.controls['payment'].errors"
+
+                                class="text-danger">
+
+                                Select Payment Mode
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="bu" style="padding-left: 300px;">
+
+                        <button type="submit" (click)="save()" class="btn btn-primary"
+
+                            [disabled]="!myForm.form.valid">Save and Download</button>
+
+                    </div>
+
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+
+        <!-- ================================================================ -->
+
+
+
+
+
+
+    </div>
+
+</body>

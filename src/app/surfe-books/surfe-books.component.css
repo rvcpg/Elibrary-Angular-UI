@@ -1,0 +1,371 @@
+.body {
+
+    align-items: center;
+  
+  }
+  
+  
+  
+  
+  
+  .main-container {
+  
+    display: flex;
+  
+  }
+  
+  
+  
+  
+  .side-nav {
+  
+    width: 50px;
+  
+    min-width: 190px;
+  
+    min-height: 495px;
+  
+    background-color: #113c60;
+  
+    color: #fff;
+  
+    box-shadow: 5px 5px 5px #939393;
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  .main {
+  
+    padding: 30px;
+  
+    background-color: lightgrey;
+  
+  }
+  
+  
+  
+  
+  
+  /* =================================================================*/
+  
+  
+  
+  
+  
+  .header {
+  
+    height: 70px;
+  
+    padding: 20px 50px;
+  
+    background-color: rgb(1, 38, 69);
+  
+    color: #fff;
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    box-shadow: 5px 5px 5px #939393;
+  
+  }
+  
+  
+  
+  
+  .logo {
+  
+    font-weight: bold;
+  
+    font-size: 20px;
+  
+  }
+  
+  
+  
+  
+  .user {
+  
+    display: flex;
+  
+    align-items: center;
+  
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  
+  .user-image {
+  
+    width: 50px;
+  
+    height: 50px;
+  
+    border-radius: 50%;
+  
+    border: 2px solid #fff;
+  
+    background-color: rgb(11, 107, 185);
+  
+    margin-left: 20px;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* =================================================================*/
+  
+  
+  
+  
+  .top {
+  
+    text-align: center;
+  
+    font-size: large;
+  
+    font-weight: 500;
+  
+  }
+  
+  
+  
+  
+  .search {
+  
+    display: flex;
+  
+  }
+  
+  
+  
+  
+  .search1 {
+  
+    margin-right: 100px;
+  
+  }
+  
+  
+  
+  
+  .search2 {
+  
+    margin-right: 100px;
+  
+  }
+  
+  
+  
+  
+  .search3 {
+  
+    margin-right: 50px;
+  
+  }
+  
+  
+  
+  
+  .card-search {
+  
+    border-radius: 5px;
+  
+    border-color: black;
+  
+  }
+  
+  
+  
+  
+  /* =================================================================*/
+  
+  
+  
+  
+  .nav-items {
+  
+    padding-top: 40px;
+  
+  }
+  
+  
+  
+  
+  .nav-item {
+  
+    padding: 25px 50px;
+  
+    cursor: pointer;
+  
+  
+  
+  
+    @media only screen and (max-width: 1300px) {
+  
+      padding: 25px 40px;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  .hover {
+  
+    background-color: rgb(1, 38, 69);
+  
+  }
+  
+  
+  
+  
+  /*.fa-icon {
+  
+          margin-right: 20px;
+  
+          font-size: 22px;
+  
+        }*/
+  
+  .span {
+  
+    display: inline;
+  
+  
+  
+  
+    @media only screen and (max-width: 1300px) {
+  
+      display: none;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  /* =================================================== */
+  
+  
+  
+  
+  
+  .title {
+  
+    text-align: center;
+  
+    color: white;
+  
+    padding-bottom: 15px;
+  
+    font-size: smaller;
+  
+  }
+  
+  
+  
+  
+  .card-body {
+  
+    font-size: small;
+  
+  }
+  
+  
+  
+  
+  
+  .column {
+  
+    float: left;
+  
+    width: 40%;
+  
+    padding: 5px;
+  
+  }
+  
+  
+  
+  
+  /* Clearfix (clear floats) */
+  
+  .row::after {
+  
+    content: "";
+  
+    clear: both;
+  
+    display: table;
+  
+  }
+  
+  
+  
+  
+  .w-100 {
+  
+    /* display: flex; */
+  
+    color: white;
+  
+    width: 18rem;
+  
+    height: 17rem;
+  
+    border-style: solid;
+  
+    border-color: black;
+  
+    border-radius: 10%;
+  
+    background-color: #113c60;
+  
+  }
+  
+  
+  
+  
+  .block {
+  
+    border: solid black 1px;
+  
+    width: 300px;
+  
+    block-size: 200px;
+  
+    border-style: solid;
+  
+    border-color: black;
+  
+    border-radius: 10%;
+  
+    display: block;
+  
+    background-color: #113c60;
+  
+    color: white;
+  
+  }
